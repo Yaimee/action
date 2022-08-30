@@ -29,7 +29,6 @@ jobs:
         with:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
-          retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,5 +49,5 @@ jobs:
         with:
           app-name: 'NewApp1989'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E1713BEC18BB4A8B9E5031E59DEB2557 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_626842A557ED483D82BA100DD6972B92 }}
           package: '*.jar'
